@@ -113,7 +113,7 @@ Open `index.html` using **Live Server** or any local web server.
 
 ## Live Demo
 
-Coming Soon...
+https://hasitapattapu.github.io/resume-builder/
 
 ---
 
