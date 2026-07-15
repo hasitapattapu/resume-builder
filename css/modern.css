@@ -1,0 +1,491 @@
+/* =====================================
+   MODERN RESUME BUILDER
+===================================== */
+
+.builder{
+
+    min-height:100vh;
+
+    display:grid;
+
+    grid-template-columns:360px 1fr;
+
+    background:#EEF3F9;
+
+}
+
+/* =====================================
+   LEFT PANEL
+===================================== */
+
+.editor{
+
+    background:#FFFFFF;
+
+    border-right:1px solid #E5E7EB;
+
+    padding:30px;
+
+    height:100vh;
+
+    overflow-y:auto;
+
+    position:sticky;
+
+    top:0;
+
+}
+
+.editor h1{
+
+    font-size:2rem;
+
+    margin-bottom:8px;
+
+    color:var(--text);
+
+}
+
+.editor>p{
+
+    color:var(--text-light);
+
+    margin-bottom:28px;
+
+}
+
+/* =====================================
+   EDITOR SECTION
+===================================== */
+
+.editor-section{
+
+    background:#FFFFFF;
+
+    border:1px solid #E5E7EB;
+
+    border-radius:16px;
+
+    padding:20px;
+
+    margin-bottom:22px;
+
+    box-shadow:0 8px 20px rgba(15,23,42,.05);
+
+}
+
+.editor-section h2{
+
+    font-size:1.1rem;
+
+    margin-bottom:18px;
+
+    color:var(--primary);
+
+}
+
+/* =====================================
+   LABELS
+===================================== */
+
+.editor label{
+
+    display:block;
+
+    margin-top:14px;
+
+    margin-bottom:8px;
+
+    font-weight:600;
+
+}
+
+/* =====================================
+   INPUTS
+===================================== */
+
+.editor input,
+
+.editor textarea{
+
+    width:100%;
+
+    padding:13px 15px;
+
+    border:1px solid #CBD5E1;
+
+    border-radius:10px;
+
+    font-size:.95rem;
+
+    font-family:inherit;
+
+    transition:.25s;
+
+}
+
+.editor textarea{
+
+    resize:vertical;
+
+}
+
+.editor input:focus,
+
+.editor textarea:focus{
+
+    border-color:var(--primary);
+
+    box-shadow:0 0 0 4px rgba(37,99,235,.10);
+
+}
+
+/* =====================================
+   SMALL CARDS
+===================================== */
+
+.editor-card{
+
+    background:#F8FAFC;
+
+    border:1px solid #E5E7EB;
+
+    border-radius:12px;
+
+    padding:16px;
+
+    margin-bottom:16px;
+
+}
+
+.editor-card input,
+
+.editor-card textarea{
+
+    margin-bottom:12px;
+
+}
+
+/* =====================================
+   BUTTONS
+===================================== */
+
+.add-btn{
+
+    width:100%;
+
+    margin-top:12px;
+
+    padding:13px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:var(--primary);
+
+    color:#FFFFFF;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+.add-btn:hover{
+
+    background:var(--primary-dark);
+
+}
+
+.remove-btn{
+
+    width:100%;
+
+    padding:12px;
+
+    margin-top:8px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#EF4444;
+
+    color:#FFFFFF;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+}
+
+.remove-btn:hover{
+
+    background:#DC2626;
+
+}
+
+.secondary-btn{
+
+    width:100%;
+
+}
+
+/* =====================================
+   RIGHT SIDE
+===================================== */
+
+.preview-area{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:flex-start;
+
+    padding:50px;
+
+    overflow:auto;
+
+}
+
+/* =====================================
+   PAPER
+===================================== */
+
+.paper{
+
+    width:794px;
+
+    min-height:1123px;
+
+    background:#FFFFFF;
+
+    padding:55px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.12);
+
+}
+
+/* =====================================
+   HEADER
+===================================== */
+
+.modern-header{
+
+    text-align:center;
+
+    padding-bottom:28px;
+
+    margin-bottom:35px;
+
+    border-bottom:3px solid var(--primary);
+
+}
+
+.modern-header h1{
+
+    font-size:2.8rem;
+
+    color:var(--text);
+
+    margin-bottom:10px;
+
+}
+
+.modern-header p{
+
+    font-size:1.15rem;
+
+    margin-bottom:18px;
+
+}
+
+/* =====================================
+   CONTACT
+===================================== */
+
+.contact-row{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    gap:10px;
+
+    font-size:.9rem;
+
+    color:var(--text-light);
+
+}
+
+.contact-row span{
+
+    background:#F3F4F6;
+
+    padding:6px 12px;
+
+    border-radius:999px;
+
+}
+
+/* =====================================
+   BLOCKS
+===================================== */
+
+.resume-block{
+
+    margin-bottom:35px;
+
+}
+
+.resume-block h2{
+
+    font-size:1.35rem;
+
+    color:var(--primary);
+
+    margin-bottom:15px;
+
+    padding-bottom:8px;
+
+    border-bottom:2px solid #E5E7EB;
+
+}
+
+/* =====================================
+   ITEMS
+===================================== */
+
+.education-item,
+
+.project-item,
+
+.certification-item{
+
+    margin-bottom:18px;
+
+}
+
+.education-item h3,
+
+.project-item h3,
+
+.certification-item h3{
+
+    font-size:1.1rem;
+
+    margin-bottom:5px;
+
+}
+
+.education-item p,
+
+.project-item p,
+
+.certification-item p{
+
+    margin-bottom:4px;
+
+}
+
+.education-item span,
+
+.certification-item span{
+
+    font-size:.9rem;
+
+    color:#64748B;
+
+}
+
+/* =====================================
+   SKILLS
+===================================== */
+
+.skill-chip{
+
+    display:inline-block;
+
+    padding:8px 14px;
+
+    margin:6px;
+
+    border-radius:999px;
+
+    background:#E8F1FF;
+
+    color:var(--primary);
+
+    font-size:.9rem;
+
+    font-weight:600;
+
+}
+
+/* =====================================
+   RESPONSIVE
+===================================== */
+
+@media(max-width:1100px){
+
+    .builder{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .editor{
+
+        position:relative;
+
+        height:auto;
+
+        border-right:none;
+
+        border-bottom:1px solid #E5E7EB;
+
+    }
+
+}
+
+@media(max-width:900px){
+
+    .preview-area{
+
+        padding:20px;
+
+    }
+
+    .paper{
+
+        width:100%;
+
+        padding:35px;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .modern-header h1{
+
+        font-size:2.2rem;
+
+    }
+
+    .contact-row{
+
+        flex-direction:column;
+
+        align-items:center;
+
+    }
+
+}

@@ -1,0 +1,255 @@
+/* ==========================================
+   GOOGLE FONT
+========================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* ==========================================
+   ROOT VARIABLES
+========================================== */
+
+:root{
+
+    --primary:#2563EB;
+
+    --primary-dark:#1E40AF;
+
+    --accent:#10B981;
+
+    --background:#F8FAFC;
+
+    --card:#FFFFFF;
+
+    --text:#1F2937;
+
+    --text-light:#6B7280;
+
+    --border:#E5E7EB;
+
+    --shadow:0 10px 25px rgba(0,0,0,.08);
+
+    --radius:18px;
+
+    --transition:.35s ease;
+
+    --max-width:1200px;
+
+}
+
+/* ==========================================
+   RESET
+========================================== */
+
+*{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+/* ==========================================
+   HTML
+========================================== */
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+/* ==========================================
+   BODY
+========================================== */
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:var(--background);
+
+    color:var(--text);
+
+    line-height:1.7;
+
+}
+
+/* ==========================================
+   IMAGES
+========================================== */
+
+img{
+
+    max-width:100%;
+
+    display:block;
+
+}
+
+/* ==========================================
+   LINKS
+========================================== */
+
+a{
+
+    text-decoration:none;
+
+    color:inherit;
+
+}
+
+/* ==========================================
+   LISTS
+========================================== */
+
+ul{
+
+    list-style:none;
+
+}
+
+/* ==========================================
+   HEADINGS
+========================================== */
+
+h1{
+
+    font-size:3.5rem;
+
+    line-height:1.1;
+
+}
+
+h2{
+
+    font-size:2.2rem;
+
+}
+
+h3{
+
+    font-size:1.3rem;
+
+}
+
+/* ==========================================
+   PARAGRAPHS
+========================================== */
+
+p{
+
+    color:var(--text-light);
+
+}
+
+/* ==========================================
+   BUTTONS
+========================================== */
+
+button{
+
+    font-family:inherit;
+
+    cursor:pointer;
+
+    border:none;
+
+}
+
+/* ==========================================
+   INPUTS
+========================================== */
+
+input,
+textarea,
+select{
+
+    font-family:inherit;
+
+    outline:none;
+
+}
+
+/* ==========================================
+   SECTION
+========================================== */
+
+.page-section{
+
+    padding:90px 8%;
+
+}
+
+/* ==========================================
+   PRIMARY BUTTON
+========================================== */
+
+.primary-btn{
+
+    display:inline-block;
+
+    background:var(--primary);
+
+    color:#ffffff;
+
+    padding:14px 28px;
+
+    border-radius:10px;
+
+    transition:var(--transition);
+
+    font-weight:600;
+
+}
+
+.primary-btn:hover{
+
+    background:var(--primary-dark);
+
+    transform:translateY(-3px);
+
+}
+
+/* ==========================================
+   SECONDARY BUTTON
+========================================== */
+
+.secondary-btn{
+
+    display:inline-block;
+
+    border:2px solid var(--primary);
+
+    color:var(--primary);
+
+    padding:12px 26px;
+
+    border-radius:10px;
+
+    transition:var(--transition);
+
+    font-weight:600;
+
+}
+
+.secondary-btn:hover{
+
+    background:var(--primary);
+
+    color:#ffffff;
+
+}
+
+/* ==========================================
+   CONTAINER
+========================================== */
+
+.container{
+
+    width:min(100%,var(--max-width));
+
+    margin:auto;
+
+}

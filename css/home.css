@@ -1,0 +1,306 @@
+/* =====================================
+   HERO
+===================================== */
+
+.hero{
+
+    min-height:78vh;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+    background:linear-gradient(135deg,#F8FAFC,#EEF4FF);
+
+    padding:100px 0;
+
+}
+.hero-content{
+
+    max-width:760px;
+
+    margin:auto;
+
+}
+
+.hero h1{
+
+    margin-bottom:20px;
+
+}
+
+.hero p{
+
+    font-size:1.25rem;
+
+    max-width:650px;
+
+    margin:0 auto 40px;
+
+}
+
+/* =====================================
+   TEMPLATE SECTION
+===================================== */
+
+.templates{
+
+    background:#fff;
+
+    padding:90px 0;
+
+}
+.templates h2{
+
+    text-align:center;
+
+    margin-bottom:60px;
+
+}
+
+.card-container{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:40px;
+
+}
+
+.template-card{
+
+    background:#fff;
+
+    border-radius:18px;
+
+    padding:30px;
+
+    text-align:center;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+}
+
+.template-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 18px 35px rgba(0,0,0,.12);
+
+}
+
+.preview-placeholder{
+
+    width:100%;
+
+    height:340px;
+
+    overflow:hidden;
+
+    border:2px dashed #CBD5E1;
+
+    border-radius:18px;
+
+    background:#F8FAFC;
+
+}
+
+.preview-placeholder img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    transition:.35s;
+
+}
+
+.template-card:hover .preview-placeholder img{
+
+    transform:scale(1.03);
+
+}
+
+.template-card h3{
+
+    margin-bottom:15px;
+
+}
+
+.template-card p{
+
+    margin-bottom:25px;
+
+}
+
+.template-card a{
+
+    display:inline-block;
+
+    background:#2563EB;
+
+    color:white;
+
+    padding:12px 28px;
+
+    border-radius:10px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.template-card a:hover{
+
+    background:#1E40AF;
+
+}
+
+/* =====================================
+   HOW TO USE
+===================================== */
+
+
+.steps{
+
+    background:#F8FAFC;
+
+    padding:90px 0;
+
+}
+
+.steps h2{
+
+    text-align:center;
+
+    margin-bottom:60px;
+
+}
+
+.steps-container{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:25px;
+
+}
+
+.step{
+
+    background:#fff;
+
+    padding:30px;
+
+    text-align:center;
+
+    border-radius:18px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.step:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.step span{
+
+    width:60px;
+
+    height:60px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    margin:0 auto 20px;
+
+    border-radius:50%;
+
+    background:#2563EB;
+
+    color:#fff;
+
+    font-size:1.3rem;
+
+    font-weight:bold;
+
+}
+
+.step h3{
+
+    margin-bottom:15px;
+
+}
+
+/* =====================================
+   GUIDE
+===================================== */
+
+.guide{
+
+    text-align:center;
+
+}
+
+.guide p{
+
+    max-width:700px;
+
+    margin:20px auto 35px;
+
+}
+
+/* =====================================
+   RESPONSIVE
+===================================== */
+
+@media(max-width:900px){
+
+    .card-container{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .steps-container{
+
+        grid-template-columns:1fr 1fr;
+
+    }
+
+}
+
+@media(max-width:600px){
+
+    .hero h1{
+
+        font-size:2.5rem;
+
+    }
+
+    .steps-container{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
