@@ -3,6 +3,11 @@
 A clean, responsive, and customizable Resume Builder built using **HTML**, **CSS**, and **JavaScript**. Users can choose from multiple resume templates, fill in their details with live preview support, upload and crop profile photos, and export resumes as PDF.
 
 ---
+## Live Demo
+
+https://hasitapattapu.github.io/resume-builder/
+
+---
 
 ## Features
 
@@ -111,11 +116,6 @@ Open `index.html` using **Live Server** or any local web server.
 
 ---
 
-## Live Demo
-
-https://hasitapattapu.github.io/resume-builder/
-
----
 
 ## Future Improvements
 
